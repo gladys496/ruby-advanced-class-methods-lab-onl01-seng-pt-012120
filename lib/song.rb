@@ -53,5 +53,8 @@ def self.find_or_create_by_name(title)
     song.name = song_array[1]
     song.artist_name = song_array[0]
     song
+  end
+  
+  def self
   end 
  end 
