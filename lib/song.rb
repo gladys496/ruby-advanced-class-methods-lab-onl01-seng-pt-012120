@@ -55,6 +55,11 @@ def self.find_or_create_by_name(title)
     song
   end
   
-  def self
+  def self.create_from_filename(filename)
+    result = self.new_from_filename(filename)
+    song = self.create 
+    song_name = result.name 
+    song.artist_name = result.artist_name
+    song
   end 
  end 
