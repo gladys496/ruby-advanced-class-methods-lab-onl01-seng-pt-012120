@@ -45,6 +45,7 @@ def self.find_or_create_by_name(title)
    sorted = self.all.sort_by {|song| song.name}
    sorted 
    end
+  
   def self.new_from_filename(filename)
     song_array = filename.split (" - ")
     song_array[1] = song_array[1].chomp(".mp3")
@@ -52,6 +53,5 @@ def self.find_or_create_by_name(title)
     song_name = song_array[1]
     song_artist_name = song_array[0]
     song 
-  
   end 
  end 
