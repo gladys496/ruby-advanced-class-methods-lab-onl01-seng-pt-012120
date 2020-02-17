@@ -62,4 +62,7 @@ def self.find_or_create_by_name(title)
     song.artist_name = result.artist_name
     song
   end 
+ def 
+
+ end
  end 
