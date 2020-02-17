@@ -39,6 +39,10 @@ def self.find_or_create_by_name(title)
   
   end
  end
- end
  
  
+ def self.alphabetical
+   softed = self.all.soft_by {|song| song.name}
+   softed 
+   end
+ end 
